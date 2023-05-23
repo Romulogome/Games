@@ -4,18 +4,18 @@ import sys, os, time
 pygame.init()
 largura,altura = 1200,650
 display = pygame.display.set_mode((largura,altura))
-fundo=pygame.image.load(os.path.join("assets","img","espaco.png")).convert_alpha()
-nave=pygame.image.load(os.path.join("assets","img","ship.png")).convert_alpha()
+fundo=pygame.image.load(os.path.join("Space","assets","img","espaco.png")).convert_alpha()
+nave=pygame.image.load(os.path.join("Space","assets","img","ship.png")).convert_alpha()
 nave = pygame.transform.scale(nave,(40,40))
 
 navRec= nave.get_rect(center=(500,500))
 print(navRec)
 
-bg1 = pygame.image.load(os.path.join("assets","img","espaco.png")).convert_alpha()
+bg1 = pygame.image.load(os.path.join("Space","assets","img","espaco.png")).convert_alpha()
 
 bgR1 = bg1.get_rect(center=((largura/2,(altura/2))))
 
-font = pygame.font.Font(os.path.join("assets","Font","Sigmar","Sigmar-Regular.ttf"),16)
+font = pygame.font.Font(os.path.join("Space","assets","Font","Sigmar","Sigmar-Regular.ttf"),16)
 texto = font.render('S T A R - GAME', True,(178,34,34))
 recText = texto.get_rect(center=(70,10))
 
